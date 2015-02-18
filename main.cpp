@@ -5,7 +5,7 @@
 // August 2014, Micha Pfeiffer
 // Couples Ogre3D and the Oculus Rift SDK to render Meshes in a VR setting
 //
-
+#include <systemMacro.h>
 #include <iostream>
 #include "Globals.h"
 
@@ -13,11 +13,12 @@
 
 extern "C" {
 
-    int main(int argc, char *argv[])
+    //int main(int argc, char *argv[])
+	AnnMain()
     {
 		std::cout << "Hello world." << std::endl;
 
-		for ( int i = 0; i < argc; i++ )
+		/*for ( int i = 0; i < argc; i++ )
 		{
 			std::string arg( argv[i] );
 			if( arg == "--rotate-view" )
@@ -45,6 +46,7 @@ extern "C" {
 
 		// Creates the main program and starts rendering. When a framelistener
 		// returns false, this will return.
+		*/
 		App* app = new App();
 
 		delete app;
